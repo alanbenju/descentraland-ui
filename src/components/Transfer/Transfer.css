@@ -1,0 +1,14 @@
+
+  .Transfer .error {
+    margin-top: 20px;
+    color: var(--primary);
+  }
+
+  .Transfer .ui.modal .header{
+    margin-bottom: 0px;
+  }
+  
+  .subtitle{
+    margin-bottom: 20px;
+    font-size: 16px;
+  }

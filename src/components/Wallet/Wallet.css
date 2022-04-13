@@ -1,0 +1,9 @@
+.Wallet .ui.card {
+    padding: 16px;
+  }
+  
+  .Wallet .error {
+    margin-top: 20px;
+    color: var(--primary);
+  }
+  
