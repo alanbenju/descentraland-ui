@@ -13,5 +13,6 @@ A simple UI for a [Dummy Token](https://github.com/decentraland/dummy-token). Th
 You will also need to setup a local ethereum development environment and deploy the Dummy Token there, to do that [follow these instructions](https://github.com/decentraland/dummy-token#setup).
 
 ## Dummy token
-Network used for testing: Rinkeby.
-Address of Dummy token: 0x0Ad1Af00fc994Ff1a731D60836F1aBb3dB5255AF
+- Network used for testing: Rinkeby.
+- Address of Dummy token: 0x0Ad1Af00fc994Ff1a731D60836F1aBb3dB5255AF
+
