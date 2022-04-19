@@ -22,7 +22,6 @@ const Wallet: React.FC<Props> = ({
 
     let location = useLocation();
 
-    console.log("wallet location", location)
     return (
         <>
             <Page className="Wallet">

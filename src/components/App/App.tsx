@@ -17,7 +17,7 @@ const App: React.FC = () => {
   return (
     <>
       <Navbar />
-      <Page className="App">
+      <Page>
         <Routes location={background || location}>
           <Route index element={<Wallet />} />
           <Route path="/" element={<Wallet />} />

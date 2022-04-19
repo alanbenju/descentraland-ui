@@ -24,7 +24,7 @@ const Transfer: React.FC<Props> = ({
     const [open, setOpen] = useState(true);
 
     const onSend = () => {
-        if (address && amount) onTransfer(address, amount)
+        if (amount && address) onTransfer(address, amount)
     }
     
     let navigate = useNavigate();
@@ -53,7 +53,7 @@ const Transfer: React.FC<Props> = ({
             >
                 <Modal.Header>
                     <Header size="medium">Transfer</Header>
-                    <p className='subtitle'>Send tokens to an account</p>
+                    <p className="subtitle">Send tokens to an account</p>
                 </Modal.Header>
 
                 <Modal.Content>
