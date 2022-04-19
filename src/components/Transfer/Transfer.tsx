@@ -24,7 +24,6 @@ const Transfer: React.FC<Props> = ({
     const [open, setOpen] = useState(true);
 
     const onSend = () => {
-        console.log("ON SEND", address, amount)
         if (address && amount) onTransfer(address, amount)
     }
     
