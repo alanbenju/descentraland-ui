@@ -24,7 +24,8 @@ const Transfer: React.FC<Props> = ({
     const [open, setOpen] = useState(true);
 
     const onSend = () => {
-        onTransfer(address, amount)
+        console.log("ON SEND", address, amount)
+        if (address && amount) onTransfer(address, amount)
     }
     
     let navigate = useNavigate();
@@ -34,12 +35,11 @@ const Transfer: React.FC<Props> = ({
         setOpen(false)
         navigate(-1);
     };
-    console.log("isconnected", isConnected)
+
     if (!isConnected) navigate("/");
+
     useEffect(() => {
-        if (!isConnected){
-         navigate("/")   
-        }
+        if (!isConnected) navigate("/") 
     })
 
 
@@ -58,7 +58,6 @@ const Transfer: React.FC<Props> = ({
                 </Modal.Header>
 
                 <Modal.Content>
-
                     <Form>
                         <Field width={3} label="AMOUNT" placeholder="100" type="number" onChange={e => setAmount(Number(e.target.value))} />
                         <Field label="ADDRESS" type="address" onChange={e => setAddress(e.target.value)} />
